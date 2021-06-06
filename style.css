@@ -1,0 +1,28 @@
+.square{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    border-color: brown;
+}
+.g{
+    display: grid;
+    grid-template-columns: 1fr [start] minmax(0,618px) [end] 1fr;
+}
+
+.g *{
+    grid-column: start/end;
+}
+
+.grid{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content:center ;
+    width: 618px;
+    height:618px;
+}
+
+.mole{
+    background-image: url("mole.jpg");
+    background-size: cover;
+}
